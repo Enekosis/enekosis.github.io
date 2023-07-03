@@ -1,4 +1,3 @@
-
 <html lang="es">
 
 <head>
@@ -10,7 +9,6 @@
 
 <body>
     <main>
-        <a href="/README.md">Home</a>
         <a href="/Discriminador de enanos/index.html">Discriminador de Enanos</a>
         <a href="/cv/cv.html">Madok CV</a>
     </main>
