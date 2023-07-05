@@ -1,17 +1,38 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Enekos main page</title>
+    <title>Enekosis Playground</title>
 </head>
 
 <body>
-    <main>
+    <div id="mySidenav" class="sidenav">
         <a href="/enekosis.github.io/index.html">Home</a>
-        <a href="/Quiz/index.html">Discriminador de Enanos</a>
-        <a href="/cv/cv.html">Madok CV</a>
-    </main>
+        <a href="/Quiz/index.html">Quiz</a>
+        <a href="/cv/cv.html">CV</a>
+    </div>
+
+    <div id="main">
+        <span id="menu" style="font-size:30px;cursor:pointer" onclick="toggleMenu()" class="fa fa-bars"></span>
+
+
+        <div class="box"></div>
+        
+        <div class="flexbox">
+            <h1>@Enekos</h1>
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

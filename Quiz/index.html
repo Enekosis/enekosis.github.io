@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,74 +14,80 @@
     <title>¿Discrimina usted a los enanos?</title>
 </head>
 <body>
-    <main class="main">
+    <div id="mySidenav" class="sidenav">
         <a href="/enekosis.github.io/index.html">Home</a>
-        <a href="/Quiz/index.html">Discriminador de Enanos</a>
-        <a href="/cv/cv.html">Madok CV</a>
+        <a href="/Quiz/index.html">Quiz</a>
+        <a href="/cv/cv.html">CV</a>
+    </div>
 
-        <section class="titlebox">
-        <h1 class="titulo">¿Discrimina usted a los enanos?</h1>
-        <p class="parrafo">En este test descubriremos si usted odia o no a los enanos de mierda.</p>
-        </section>
-        <section class="listbox">
-            <form id="enaniquiz">
-                <h4>1. Para referirse a los enanos, usted utiliza el término:</h4>
-                <fieldset class="Q1">
-                    <label for="a1"><input type="radio" name="Q1" id="a1" value="a"> Gente pequeña.</label>
-                    <label for="b1"><input type="radio" name="Q1" id="b1"  value="b"> Liliputiense.</label>
-                    <label for="c1"><input type="radio" name="Q1" id="c1" value="c"> Enano puto.</label>
-                    <label for="d1"><input type="radio" name="Q1" id="d1" value="d"> Amigo.</label>
-                </fieldset>
-                <h4>2. ¿Podria usted tener una pareja enana?</h4>
-                <fieldset class="Q2">
-                    <label for="a2"><input type="radio" name="Q2" id="a2" value="a"> Si, siempre que nos amemos.</label>
-                    <label for="b2"><input type="radio" name="Q2" id="b2" value="b"> Solo si tiene la altura exacta para practicarme sexo oral estando de pie.</label>
-                    <label for="c2"><input type="radio" name="Q2" id="c2" value="c"> No, los enanos son todos putos.</label>
-                    <label for="d2"><input type="radio" name="Q2" id="d2"  value="d"> Si, obvio.</label>
-                </fieldset>
-                <h4>3. ¿Cuantos enanos cree que entran en un Fiat 600?</h4>
-                <fieldset class="Q3">
-                    <label for="a3"><input type="radio" name="Q3" id="a3" value="a"> Seis: dos adelante, cuatro atras.</label>
-                    <label for="b3"><input type="radio" name="Q3" id="b3" value="b"> Catorce: cuatro adelante, siete atras y tres en el baul.</label>
-                    <label for="c3"><input type="radio" name="Q3" id="c3" value="c"> Uno solo: los enanos son todos ortivas y nunca llevan a nadie.</label>
-                    <label for="d3"><input type="radio" name="Q3" id="d3" value="d"> Una vez medio borrachos subimos como a ocho.</label>
-                </fieldset>
-                <h4>4. ¿Tiene usted amigos enanos?</h4>
-                <fieldset class="Q4">
-                    <label for="a4"><input type="radio" name="Q4" id="a4" value="a"> Si, varios.</label>
-                    <label for="b4"><input type="radio" name="Q4" id="b4" value="b"> Tuve uno pero nos peleamos porque le dije "Leñador de Bonsai".</label>
-                    <label for="c4"><input type="radio" name="Q4" id="c4" value="c"> No, no creo en la amistad entre el hombre y los enanos.</label>
-                    <label for="d4"><input type="radio" name="Q4" id="d4" value="d"> Si, la mayoria.</label>
-                </fieldset>
-                <h4>5. Cuando un enano entra a la misma habitacion que usted:</h4>
-                <fieldset class="Q5">
-                    <label for="a5"><input type="radio" name="Q5" id="a5" value="a"> No se inmuta.</label>
-                    <label for="b5"><input type="radio" name="Q5" id="b5" value="b"> Le apoyas un vaso en la cabeza.</label>
-                    <label for="c5"><input type="radio" name="Q5" id="c5" value="c"> Lo señala y grita: "Enano puto".</label>
-                    <label for="d5"><input type="radio" name="Q5" id="d5" value="d"> Lo saluda.</label>
-                </fieldset>
-                <h4>6. ¿Si un enano se cae en el medio de un bosque, y no hay nadie que lo escuche, hace ruido?</h4>
-                <fieldset class="Q6">
-                    <label for="a6"><input type="radio" name="Q6" id="a6" value="a"> Si, todas las cosas que se caen hacen ruido por mas que nadie las escuche.</label>
-                    <label for="b6"><input type="radio" name="Q6" id="b6" value="b"> No, porque nadie lo escucha.</label>
-                    <label for="c6"><input type="radio" name="Q6" id="c6" value="c"> No se, pero siempre es gracioso ver cuando se cae un enano.</label>
-                    <label for="d6"><input type="radio" name="Q6" id="d6" value="d"> No se si hace ruido, pero duele seguro.</label>
-                </fieldset>
-                <h4>7. ¿Cree que en esta encuesta se repite demasiado la palabra "enano"?</h4>
-                <fieldset class="Q7">
-                    <label for="a7"><input type="radio" name="Q7" id="a7" value="a"> Si, pero no me jode.</label>
-                    <label for="b7"><input type="radio" name="Q7" id="b7" value="b"> Si, la verdad me rompe un poco las pelotas.</label>
-                    <label for="c7"><input type="radio" name="Q7" id="c7" value="c"> Si, dice muchas veces "enano" y pocas "puto".</label>
-                    <label for="d7"><input type="radio" name="Q7" id="d7" value="d"> No, estoy acostumbrado.</label>
-                </fieldset>
-                <input class="submit" type="submit" value="Enviar Respuesta">
-            </form>
-        </section>
-        <section class="answer">
-            <h4 class="resultado">El resultado de la encuesta es:</h4>
-            <div class="respuesta" id="respuesta"></div>
-        </section>
-    </main>
+    <div id="main">
+        <span id="menu" style="font-size:30px;cursor:pointer" onclick="toggleMenu()">&#9776;</span>
+        <main class="main">
+
+            <section class="titlebox">
+            <h1 class="titulo">¿Discrimina usted a los enanos?</h1>
+            <p class="parrafo">En este test descubriremos si usted odia o no a los enanos de mierda.</p>
+            </section>
+            <section class="listbox">
+                <form id="enaniquiz">
+                    <h4>1. Para referirse a los enanos, usted utiliza el término:</h4>
+                    <fieldset class="Q1">
+                        <label for="a1"><input type="radio" name="Q1" id="a1" value="a"> Gente pequeña.</label>
+                        <label for="b1"><input type="radio" name="Q1" id="b1"  value="b"> Liliputiense.</label>
+                        <label for="c1"><input type="radio" name="Q1" id="c1" value="c"> Enano puto.</label>
+                        <label for="d1"><input type="radio" name="Q1" id="d1" value="d"> Amigo.</label>
+                    </fieldset>
+                    <h4>2. ¿Podria usted tener una pareja enana?</h4>
+                    <fieldset class="Q2">
+                        <label for="a2"><input type="radio" name="Q2" id="a2" value="a"> Si, siempre que nos amemos.</label>
+                        <label for="b2"><input type="radio" name="Q2" id="b2" value="b"> Solo si tiene la altura exacta para practicarme sexo oral estando de pie.</label>
+                        <label for="c2"><input type="radio" name="Q2" id="c2" value="c"> No, los enanos son todos putos.</label>
+                        <label for="d2"><input type="radio" name="Q2" id="d2"  value="d"> Si, obvio.</label>
+                    </fieldset>
+                    <h4>3. ¿Cuantos enanos cree que entran en un Fiat 600?</h4>
+                    <fieldset class="Q3">
+                        <label for="a3"><input type="radio" name="Q3" id="a3" value="a"> Seis: dos adelante, cuatro atras.</label>
+                        <label for="b3"><input type="radio" name="Q3" id="b3" value="b"> Catorce: cuatro adelante, siete atras y tres en el baul.</label>
+                        <label for="c3"><input type="radio" name="Q3" id="c3" value="c"> Uno solo: los enanos son todos ortivas y nunca llevan a nadie.</label>
+                        <label for="d3"><input type="radio" name="Q3" id="d3" value="d"> Una vez medio borrachos subimos como a ocho.</label>
+                    </fieldset>
+                    <h4>4. ¿Tiene usted amigos enanos?</h4>
+                    <fieldset class="Q4">
+                        <label for="a4"><input type="radio" name="Q4" id="a4" value="a"> Si, varios.</label>
+                        <label for="b4"><input type="radio" name="Q4" id="b4" value="b"> Tuve uno pero nos peleamos porque le dije "Leñador de Bonsai".</label>
+                        <label for="c4"><input type="radio" name="Q4" id="c4" value="c"> No, no creo en la amistad entre el hombre y los enanos.</label>
+                        <label for="d4"><input type="radio" name="Q4" id="d4" value="d"> Si, la mayoria.</label>
+                    </fieldset>
+                    <h4>5. Cuando un enano entra a la misma habitacion que usted:</h4>
+                    <fieldset class="Q5">
+                        <label for="a5"><input type="radio" name="Q5" id="a5" value="a"> No se inmuta.</label>
+                        <label for="b5"><input type="radio" name="Q5" id="b5" value="b"> Le apoyas un vaso en la cabeza.</label>
+                        <label for="c5"><input type="radio" name="Q5" id="c5" value="c"> Lo señala y grita: "Enano puto".</label>
+                        <label for="d5"><input type="radio" name="Q5" id="d5" value="d"> Lo saluda.</label>
+                    </fieldset>
+                    <h4>6. ¿Si un enano se cae en el medio de un bosque, y no hay nadie que lo escuche, hace ruido?</h4>
+                    <fieldset class="Q6">
+                        <label for="a6"><input type="radio" name="Q6" id="a6" value="a"> Si, todas las cosas que se caen hacen ruido por mas que nadie las escuche.</label>
+                        <label for="b6"><input type="radio" name="Q6" id="b6" value="b"> No, porque nadie lo escucha.</label>
+                        <label for="c6"><input type="radio" name="Q6" id="c6" value="c"> No se, pero siempre es gracioso ver cuando se cae un enano.</label>
+                        <label for="d6"><input type="radio" name="Q6" id="d6" value="d"> No se si hace ruido, pero duele seguro.</label>
+                    </fieldset>
+                    <h4>7. ¿Cree que en esta encuesta se repite demasiado la palabra "enano"?</h4>
+                    <fieldset class="Q7">
+                        <label for="a7"><input type="radio" name="Q7" id="a7" value="a"> Si, pero no me jode.</label>
+                        <label for="b7"><input type="radio" name="Q7" id="b7" value="b"> Si, la verdad me rompe un poco las pelotas.</label>
+                        <label for="c7"><input type="radio" name="Q7" id="c7" value="c"> Si, dice muchas veces "enano" y pocas "puto".</label>
+                        <label for="d7"><input type="radio" name="Q7" id="d7" value="d"> No, estoy acostumbrado.</label>
+                    </fieldset>
+                    <input class="submit" type="submit" value="Enviar Respuesta">
+                </form>
+            </section>
+            <section class="answer">
+                <h4 class="resultado">El resultado de la encuesta es:</h4>
+                <div class="respuesta" id="respuesta"></div>
+            </section>
+        </main>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
